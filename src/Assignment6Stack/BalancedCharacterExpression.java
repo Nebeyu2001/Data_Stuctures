@@ -77,7 +77,7 @@ public class BalancedCharacterExpression {
         String expr = input.next();
 
 
-       // Stack<Character> ele = new Stack<Character>();
+
 
         if (areBracketsBalanced(expr)) {
             System.out.println("Balanced");

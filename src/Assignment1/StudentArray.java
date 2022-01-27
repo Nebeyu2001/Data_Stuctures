@@ -7,7 +7,7 @@ public class StudentArray {
 
 
     public StudentArray(int max){
-        nElems = max;
+        a = new Student[max];
     }
 
     public Student find(int id){
@@ -59,12 +59,13 @@ public class StudentArray {
     }
 
     public static void main(String [] args) {
-        StudentArray std1 = new StudentArray(5);
+        StudentArray std1 = new StudentArray(4);
         std1.insert(100,"abebe",89);
         std1.insert(101,"kebede",91);
         std1.insert(102,"chube",95);
         std1.insert(103,"chala",90);
         std1.insert(104,"chebete",80);
+        std1.displayAll();
         System.out.println("Display all: ");
         std1.displayAll();
 
